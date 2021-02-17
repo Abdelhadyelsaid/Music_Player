@@ -5,17 +5,22 @@ public class Song {
     private String mArtistName;
     private int mimage;
 
-    public Song(String SongName, String ArtistName, int image){
-        mSongName=SongName;
-        mArtistName=ArtistName;
-        mimage=image;
+    public Song(String SongName, String ArtistName, int image) {
+        mSongName = SongName;
+        mArtistName = ArtistName;
+        mimage = image;
     }
-    public String getmSongName(){
+
+    public String getmSongName() {
         return mSongName;
     }
-    public String getmArtistName(){
+
+    public String getmArtistName() {
         return mArtistName;
     }
-    public int getMimage(){ return mimage;}
+
+    public int getMimage() {
+        return mimage;
+    }
 }
 
