@@ -23,8 +23,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".AlbumsActivity"
-            android:label="Albums">
+            android:name=".PlaylistsActivity"
+            android:label="Playlists">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

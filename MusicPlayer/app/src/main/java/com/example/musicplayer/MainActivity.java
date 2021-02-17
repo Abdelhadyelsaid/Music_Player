@@ -2,13 +2,11 @@ package com.example.musicplayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.view.View.OnClickListener;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(SongIntent);}
         });
 
-        Button album =  findViewById(R.id.albums);
-        album.setOnClickListener(new OnClickListener() {
+        Button playlist =  findViewById(R.id.playlist);
+        playlist.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent AlbumIntent = new Intent(MainActivity.this, AlbumsActivity.class);
-                startActivity(AlbumIntent);}
+                Intent playlistIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
+                startActivity(playlistIntent);}
         });
 
         Button artist =  findViewById(R.id.artists);
