@@ -37,12 +37,12 @@ public class PlaylistsActivity extends AppCompatActivity {
         });
 
 
-        ArrayList<Artist> playlist = new ArrayList<Artist>();
+        ArrayList<Song> playlist = new ArrayList<Song>();
         String PlaylistName[] = {"Top Songs", "Daily mix", "Favourite", "Recently added", "Imagine Dragons"};
         int Icon[] = {R.drawable.playlist};
 
         for (int i = 0; i < PlaylistName.length; i++) {
-            playlist.add(new Artist(PlaylistName[i], Icon[0]));
+            playlist.add(new Song(PlaylistName[i], Icon[0]));
         }
 
         ArtistAdapter adapter = new ArtistAdapter(this, playlist);

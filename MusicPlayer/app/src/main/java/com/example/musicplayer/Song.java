@@ -11,6 +11,11 @@ public class Song {
         mimage = image;
     }
 
+    public Song(String ArtistName, int image) {
+        mArtistName = ArtistName;
+        mimage = image;
+    }
+
     public String getmSongName() {
         return mSongName;
     }

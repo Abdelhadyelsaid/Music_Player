@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ArtistAdapter extends ArrayAdapter<Artist> {
-    public ArtistAdapter(Activity context, ArrayList<Artist> artists) {
+public class ArtistAdapter extends ArrayAdapter<Song> {
+    public ArtistAdapter(Activity context, ArrayList<Song> artists) {
         super(context, 0, artists);
     }
 
@@ -20,7 +20,7 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         View listItemView = convertView;
-        Artist current = getItem(position);
+        Song current = getItem(position);
 
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(

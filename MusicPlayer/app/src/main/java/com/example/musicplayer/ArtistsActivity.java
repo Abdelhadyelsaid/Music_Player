@@ -35,12 +35,12 @@ public class ArtistsActivity extends AppCompatActivity {
         });
 
 
-        ArrayList<Artist> artist = new ArrayList<Artist>();
+        ArrayList<Song> artist = new ArrayList<Song>();
         String ArtistName[] = {"Imagine Dragons", "Maroon 5", "One Direction", "Imagine Dragons", "Halsey", "Major Lazer", "Rihanaa"};
         int Icon[] = {R.drawable.artist};
 
         for (int i = 0; i < ArtistName.length; i++) {
-            artist.add(new Artist(ArtistName[i], Icon[0]));
+            artist.add(new Song(ArtistName[i], Icon[0]));
         }
 
         ArtistAdapter adapter = new ArtistAdapter(this, artist);
